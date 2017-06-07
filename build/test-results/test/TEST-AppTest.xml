@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-07T12:28:45" hostname="PratikPat-w7" time="6.571">
+  <properties/>
+  <testcase name="test1" classname="AppTest" time="6.571"/>
+  <system-out><![CDATA[Google
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 8418
+Only local connections are allowed.
+Jun 07, 2017 5:58:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
