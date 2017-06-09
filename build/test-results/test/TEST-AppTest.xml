@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-07T12:28:45" hostname="PratikPat-w7" time="6.571">
+<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-09T08:21:51" hostname="PratikPat-w7" time="6.545">
   <properties/>
-  <testcase name="test1" classname="AppTest" time="6.571"/>
+  <testcase name="test1" classname="AppTest" time="6.545"/>
   <system-out><![CDATA[Google
+....Asserting the result....
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 8418
+  <system-err><![CDATA[Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 37323
 Only local connections are allowed.
-Jun 07, 2017 5:58:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 09, 2017 1:51:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>
