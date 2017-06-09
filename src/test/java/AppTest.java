@@ -20,7 +20,7 @@ public class AppTest {
 		//logger.setLevel(Level.INFO);
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
-		System.out.println(driver.getTitle());
+		System.out.println(driver.getTitle()+"");
 
 		WebElement el = driver.findElement(By.id("lst-ib"));
 		el.sendKeys("Coldplay" + Keys.ENTER);
