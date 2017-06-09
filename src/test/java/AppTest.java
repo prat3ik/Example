@@ -1,3 +1,6 @@
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -16,17 +19,18 @@ public class AppTest {
 
 	@Test
 	public void test1() {
+		Logger logger = Logger.getLogger(AppTest.class.getName());
+		logger.setLevel(Level.INFO);
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
 
 		WebElement el = driver.findElement(By.id("lst-ib"));
 		el.sendKeys("Coldplay" + Keys.ENTER);
-
 		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".rc>.r>a")));
 
+		logger.log(Level.INFO,"....Asserting the result....");
 		String actualResult = driver.findElement(By.cssSelector(".rc>.r>a")).getText();
-		System.out.println("....Asserting the result....000000");
 		Assert.assertEquals(actualResult, "Coldplay official website");
 	}
 }
