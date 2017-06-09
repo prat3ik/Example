@@ -26,7 +26,7 @@ public class AppTest {
 		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".rc>.r>a")));
 
 		String actualResult = driver.findElement(By.cssSelector(".rc>.r>a")).getText();
-		System.out.println("....Asserting the result....000");
+		System.out.println("....Asserting the result....0000");
 		Assert.assertEquals(actualResult, "Coldplay official website");
 	}
 }
