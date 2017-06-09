@@ -29,7 +29,7 @@ public class AppTest {
 		el.sendKeys("Coldplay" + Keys.ENTER);
 		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".rc>.r>a")));
 
-		logger.log(Level.INFO,"....Asserting the result....00");
+		logger.log(Level.INFO,"....Asserting the result....000");
 		String actualResult = driver.findElement(By.cssSelector(".rc>.r>a")).getText();
 		Assert.assertEquals(actualResult, "Coldplay official website");
 	}
