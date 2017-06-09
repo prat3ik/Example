@@ -41,12 +41,15 @@ task buildProject{
 }
 
 test {
-    useTestNG() {
+    testLogging.showStandardStreams = true
+	
+	useTestNG() {
         //set TestNG output dir
         outputDirectory = file("$project.buildDir//TestNG_Output")
         //required to turn on TestNG reports
         useDefaultListeners = true
         suites 'src/test/resources/testng.xml'
     }
+		
 }
 
